@@ -50,12 +50,13 @@
 		title:<span class="str">"Sample Welcome Message Title:"</span>,
 		text: <span class="str">"Lorem ipsum dolor sit..."</span>,
 		imageUrl: <span class="str">'images/Custom_Modal_Picture.png'</span>,
-		div_class: <span class="str">"custom_className_fromCSS"</span>
+		div_class: <span class="str">"custom_className_fromCSS"</span>,
+        isHtmlContent: <span class="str">true</span>
 	});
 	</pre>
 </div>
 
-<p>SweetModal displays a modal which reacts like SweetAlert but is more customizable because you can use a css class as a parameter ! (details below...)</p>
+<p>SweetModal displays a modal which reacts like SweetAlert but is more customizable because you can use a css class as a parameter and use html content in "text" ! (details below...)</p>
 <p>Download SweetModal on GitHub : <a href="https://github.com/JulienLaclaverie/sweetmodal" target="_blank">Click here</a></p>
 
 <!-- Configuration -->
@@ -140,6 +141,11 @@
 		<td><i>" "</i></td>
 		<td>Set this parameter to any css class name to change the modal's css.</td>
 	</tr>
+	<tr>
+		<td><b>isHtmlContent</b></td>
+		<td><i>false</i></td>
+		<td>Set this parameter to true if you want to add custom html content in "text".</td>
+	</tr>
 </table>
 
 <!-- Contribute -->
@@ -160,9 +166,10 @@ document.querySelector('.showcase.normal button').onclick = function(){
 document.querySelector('.showcase.sweet button').onclick = function(){
 	swmo({
 		title: "Sample Welcome Message Title:",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		text: '<style type="text/css">.swmoBLUE {color: blue;} .swmoRED {color: red;}.swmoPURPLE {color: purple;}</style><b>Lorem</b> ipsum dolor sit amet <span class="swmoBLUE">Une Baguette</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="swmoRED">Ut enim ad minim veniam, quis nostrud exercitation ullamco <b>laboris nisi ut </span>aliquip ex ea commodo consequat.</b> Duis aute irure dolor in reprehenderit in voluptate <i>velit esse cillum dolore eu fugiat nulla pariatur. <span class="swmoPURPLE">Excepteur sint occaecat cupidatat non proident,</i> sunt in culpa qui officia deserunt <s>mollit anim id est laborum</s>.</span>',
 		imageUrl: 'images/logo_big.png',
-		div_class: "custom-modal"
+		div_class: "custom-modal",
+        isHtmlContent: true
 	});
 };
 
