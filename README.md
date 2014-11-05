@@ -1,27 +1,9 @@
-#SweetAlert
+#SweetModal
 
-An awesome replacement for JavaScript's alert.
-
-[See it in action!](http://tristanedwards.me/sweetalert)
-
-![A success modal](https://raw.github.com/t4t5/sweetalert/master/sweetalert.gif)
+Modal replacement for JavaScript's alert based on sweet-alert.
 
 #Usage
 
-You can install SweetAlert through bower:
+Test it with the example.html file.
 
-```bash
-bower install sweetalert
-```
-
-Alternatively, download the package and reference the JavaScript and CSS files manually:
-
-```html
-<script src="lib/sweet-alert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
-```
-
-#SASS
-The css is built with the `--style compressed` and `--sourcemap=none` options:
-
-    sass --style compressed --sourcemap=none sweet-alert.scss sweet-alert.css
+/!\ Currently Work in Progress /!\ 
