@@ -9,7 +9,7 @@
   display: none;
   z-index: 1000; }
 
-.sweet-alert {
+.sweet-modal {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
   width: 800px;
@@ -25,20 +25,20 @@
   display: none;
   z-index: 2000; }
   @media all and (max-width: 540px) {
-    .sweet-alert {
+    .sweet-modal {
       width: auto;
       margin-left: 0;
       margin-right: 0;
       left: 15px;
       right: 15px; } }
-  .sweet-alert h2 {
+  .sweet-modal h2 {
     color: #575757;
     font-size: 30px;
     text-align: left;
     font-weight: 600;
     text-transform: none;
     position: relative; }
-  .sweet-alert p {
+  .sweet-modal p {
     color: #797979;
     font-size: 16px;
     text-align: left;
@@ -46,7 +46,7 @@
     position: relative;
     margin: 0;
     line-height: normal; }
-  .sweet-alert button {
+  .sweet-modal button {
     background-color: #AEDEF4;
     color: white;
     border: none;
@@ -57,26 +57,26 @@
     padding: 10px 32px;
     margin: 26px 5px 0 0px;
     cursor: pointer; }
-    .sweet-alert button:focus {
+    .sweet-modal button:focus {
       outline: none;
       box-shadow: 0 0 2px rgba(128, 179, 235, 0.5), inset 0 0 0 1px rgba(0, 0, 0, 0.05); }
-    .sweet-alert button:hover {
+    .sweet-modal button:hover {
       background-color: #a1d9f2; }
-    .sweet-alert button:active {
+    .sweet-modal button:active {
       background-color: #81ccee; }
-    .sweet-alert button.cancel {
+    .sweet-modal button.cancel {
       background-color: #D0D0D0; }
-      .sweet-alert button.cancel:hover {
+      .sweet-modal button.cancel:hover {
         background-color: #c8c8c8; }
-      .sweet-alert button.cancel:active {
+      .sweet-modal button.cancel:active {
         background-color: #b6b6b6; }
-      .sweet-alert button.cancel:focus {
+      .sweet-modal button.cancel:focus {
         box-shadow: rgba(197, 205, 211, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset !important; }
-    .sweet-alert button::-moz-focus-inner {
+    .sweet-modal button::-moz-focus-inner {
       border: 0; }
-  .sweet-alert[data-has-cancel-button=false] button {
+  .sweet-modal[data-has-cancel-button=false] button {
     box-shadow: none !important; }
-  .sweet-alert .icon {
+  .sweet-modal .icon {
     width: 80px;
     height: 80px;
     border: 4px solid gray;
@@ -84,12 +84,12 @@
     margin: 10px auto auto 0px;
     position: relative;
     box-sizing: content-box; }
-    .sweet-alert .icon.error {
+    .sweet-modal .icon.error {
       border-color: #F27474; }
-      .sweet-alert .icon.error .x-mark {
+      .sweet-modal .icon.error .x-mark {
         position: relative;
         display: block; }
-      .sweet-alert .icon.error .line {
+      .sweet-modal .icon.error .line {
         position: absolute;
         height: 5px;
         width: 47px;
@@ -97,17 +97,17 @@
         display: block;
         top: 37px;
         border-radius: 2px; }
-        .sweet-alert .icon.error .line.left {
+        .sweet-modal .icon.error .line.left {
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
           left: 17px; }
-        .sweet-alert .icon.error .line.right {
+        .sweet-modal .icon.error .line.right {
           -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
           right: 16px; }
-    .sweet-alert .icon.warning {
+    .sweet-modal .icon.warning {
       border-color: #F8BB86; }
-      .sweet-alert .icon.warning .body {
+      .sweet-modal .icon.warning .body {
         position: absolute;
         width: 5px;
         height: 47px;
@@ -116,7 +116,7 @@
         border-radius: 2px;
         margin-left: 0px;
         background-color: #F8BB86; }
-      .sweet-alert .icon.warning .dot {
+      .sweet-modal .icon.warning .dot {
         position: absolute;
         width: 7px;
         height: 7px;
@@ -125,9 +125,9 @@
         left: 50%;
         bottom: 10px;
         background-color: #F8BB86; }
-    .sweet-alert .icon.info {
+    .sweet-modal .icon.info {
       border-color: #C9DAE1; }
-      .sweet-alert .icon.info::before {
+      .sweet-modal .icon.info::before {
         content: "";
         position: absolute;
         width: 5px;
@@ -137,7 +137,7 @@
         border-radius: 2px;
         margin-left: 0px;
         background-color: #C9DAE1; }
-      .sweet-alert .icon.info::after {
+      .sweet-modal .icon.info::after {
         content: "";
         position: absolute;
         width: 7px;
@@ -146,9 +146,9 @@
         margin-left: 0px;
         top: 19px;
         background-color: #C9DAE1; }
-    .sweet-alert .icon.success {
+    .sweet-modal .icon.success {
       border-color: #A5DC86; }
-      .sweet-alert .icon.success::before, .sweet-alert .icon.success::after {
+      .sweet-modal .icon.success::before, .sweet-modal .icon.success::after {
         content: '';
         border-radius: 50%;
         position: absolute;
@@ -157,7 +157,7 @@
         background: white;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg); }
-      .sweet-alert .icon.success::before {
+      .sweet-modal .icon.success::before {
         border-radius: 120px 0 0 120px;
         top: -7px;
         left: -33px;
@@ -165,7 +165,7 @@
         transform: rotate(-45deg);
         -webkit-transform-origin: 60px 60px;
         transform-origin: 60px 60px; }
-      .sweet-alert .icon.success::after {
+      .sweet-modal .icon.success::after {
         border-radius: 0 120px 120px 0;
         top: -11px;
         left: 30px;
@@ -173,7 +173,7 @@
         transform: rotate(-45deg);
         -webkit-transform-origin: 0px 60px;
         transform-origin: 0px 60px; }
-      .sweet-alert .icon.success .placeholder {
+      .sweet-modal .icon.success .placeholder {
         width: 80px;
         height: 80px;
         border: 4px solid rgba(165, 220, 134, 0.2);
@@ -183,7 +183,7 @@
         left: -4px;
         top: -4px;
         z-index: 2; }
-      .sweet-alert .icon.success .fix {
+      .sweet-modal .icon.success .fix {
         width: 5px;
         height: 90px;
         background-color: white;
@@ -193,26 +193,26 @@
         z-index: 1;
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg); }
-      .sweet-alert .icon.success .line {
+      .sweet-modal .icon.success .line {
         height: 5px;
         background-color: #A5DC86;
         display: block;
         border-radius: 2px;
         position: absolute;
         z-index: 2; }
-        .sweet-alert .icon.success .line.tip {
+        .sweet-modal .icon.success .line.tip {
           width: 25px;
           left: 14px;
           top: 46px;
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
-        .sweet-alert .icon.success .line.long {
+        .sweet-modal .icon.success .line.long {
           width: 47px;
           right: 8px;
           top: 38px;
           -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg); }
-    .sweet-alert .icon.custom {
+    .sweet-modal .icon.custom {
       background-size: contain;
 	  background-position center center;
       border-radius: 0;
