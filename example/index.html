@@ -19,9 +19,10 @@
 
 <body>
 
-<h1>Sweet Modal</h1>
+<h1><a href="https://github.com/JulienLaclaverie/sweetmodal" target="_blank">Sweet Modal</a></h1>
 <h2>A customisable modal replacement for Javascript's "Alert"</h2>
 <h2>Based on Sweet Alert by Tristan Edwards</h2>
+<button class="download">Download</button>
 
 <!-- What does it do? -->
 <h3>So... What does it do?</h3>
@@ -55,6 +56,7 @@
 </div>
 
 <p>SweetModal displays a modal which reacts like SweetAlert but is more customizable because you can use a css class as a parameter ! (details below...)</p>
+<p>Download SweetModal on GitHub : <a href="https://github.com/JulienLaclaverie/sweetmodal" target="_blank">Click here</a></p>
 
 <!-- Configuration -->
 <h3>Configuration</h3>
@@ -144,9 +146,12 @@
 <h3>Contribute</h3>
 <p>SweetModal is a fork of <a href="https://github.com/t4t5/sweetalert" target="_blank">SweetAlert</a> created by <a href="https://github.com/JulienLaclaverie" target="_blank">Julien Laclaverie</a>.</p>
 <p>SweetAlert was created by <a href="http://tristanedwards.me" target="_blank">Tristan Edwards</a>, you can follow him on <a href="https://twitter.com/t4t5" target="_blank" class="twitter">Twitter</a> or <a href="https://dribbble.com/tristanedwards" target="_blank" class="dribbble">Dribbble</a> for updates and other cool projects!</p>
-<p>Feel free to fork sweetAlert on <a href="https://github.com/t4t5/sweetalert" class="github">GitHub</a> if you have any features that you want to add!</p>
 
 <script>
+
+document.querySelector('button.download').onclick = function(){
+	window.location='https://github.com/JulienLaclaverie/sweetmodal';
+};
 
 document.querySelector('.showcase.normal button').onclick = function(){
 	alert("Sample Welcome Message Title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
@@ -157,7 +162,7 @@ document.querySelector('.showcase.sweet button').onclick = function(){
 		title: "Sample Welcome Message Title:",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		imageUrl: 'images/logo_big.png',
-		div_class: "vroom_modale"
+		div_class: "custom-modal"
 	});
 };
 

@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+/* customize the modal here*/
+.sweet-modal.custom-modal {
+width: 800px;
+left: 50%;
+top: 50%;
+text-align: left;
+margin-left: -418px;
+margin-top: -200px; }
+
 body {
   background-color: #f2f4f6;
   font-family: 'Open Sans', sans-serif;
