@@ -1,16 +1,18 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
 .sweet-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0);/* IE8 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";/* IE8 */
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   display: none;
-  z-index: 1000; }
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);}
 
 .sweet-modal {
-  background-color: white;
+  background-color: f8f8f8;
   font-family: 'Open Sans', sans-serif;
   width: 800px;
   padding: 17px;
@@ -20,7 +22,7 @@
   left: 50%;
   top: 50%;
   margin-left: -418px;
-  margin-top: -200px
+  margin-top: -200px;
   overflow: hidden;
   display: none;
   z-index: 2000; }
@@ -45,6 +47,7 @@
     font-weight: 300;
     position: relative;
     margin: 0;
+    padding: 0;
     line-height: normal; }
   .sweet-modal button {
     background-color: #AEDEF4;
@@ -214,9 +217,9 @@
           transform: rotate(-45deg); }
     .sweet-modal .icon.custom {
       background-size: contain;
-	  background-position center center;
       border-radius: 0;
       border: none;
+      background-position: left center;
       background-repeat: no-repeat; }
 
 /*
@@ -557,13 +560,6 @@
   -moz-animation: animateXMark 0.5s;
   animation: animateXMark 0.5s; }
 
-/*@include keyframes(simpleRotate) {
-	0%		{ transform: rotateY(0deg);    }
-  100% 	{ transform: rotateY(-360deg); }
-}
-.simpleRotate {
-	@include animation('simpleRotate 0.75s');
-}*/
 @-webkit-keyframes pulseWarning {
   0% {
     border-color: #F8D486; }
