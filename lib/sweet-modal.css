@@ -14,8 +14,8 @@
 .sweet-modal {
   background-color: f8f8f8;
   font-family: 'Open Sans', sans-serif;
-  width: 800px;
-  padding: 17px;
+  width:800px;
+  padding:90px;
   border-radius: 5px;
   text-align: left;
   position: fixed;
@@ -46,11 +46,20 @@
     text-align: left;
     font-weight: 300;
     position: relative;
-    margin: 0;
-    padding: 0;
-    line-height: normal; }
+    line-height: normal;
+    //Positionnement du texte pour scroll
+    right:80px;
+    margin-right: 80px;
+    left:90px;
+    position: absolute;
+    top:220px;
+    bottom:100px;
+    height: auto;
+    overflow-y: auto;}
   .sweet-modal button {
     background-color: #AEDEF4;
+    position: absolute;
+    bottom: 70px;
     color: white;
     border: none;
     box-shadow: none;
